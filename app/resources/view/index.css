@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.action{
+    color: green;
+}
+.dialog{
+    padding-left: 30%;
+}
+.character{
+    padding-left: 40%;
+    text-transform: uppercase;
+}
+.transition{
+    text-align: right;
+    text-transform: uppercase;
+}
