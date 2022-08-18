@@ -26,7 +26,7 @@ specifiers:
   init: ^0.1.2
   jest: ^27.5.1
   knex: ^0.95.14
-  lunox: ^1.5.0
+  lunox: ^1.7.0
   mysql: ^2.18.1
   nodemon: ^2.0.16
   objection: ^3.0.1
@@ -56,7 +56,7 @@ dependencies:
   cors: 2.8.5
   init: 0.1.2
   knex: 0.95.15_mysql@2.18.1
-  lunox: 1.5.0
+  lunox: 1.7.0
   mysql: 2.18.1
   objection: 3.0.1_knex@0.95.15
   react: 18.1.0
@@ -2240,7 +2240,7 @@ packages:
     dev: true
 
   /cookie-signature/1.0.6:
-    resolution: {integrity: sha1-4wOogrNCzD7oylE6eZmXNNqzriw=}
+    resolution: {integrity: sha512-QADzlaHc8icV8I7vbaJXJwod9HWYp8uCqf1xa4OfNu1T7JVxQIrUgOWtHdNDtPiywmFbiS12VjotIXLrKM3orQ==}
     dev: false
 
   /cookie/0.4.1:
@@ -2463,7 +2463,7 @@ packages:
     dev: true
 
   /dezalgo/1.0.3:
-    resolution: {integrity: sha1-f3Qt4Gb8dIvI24IFad3c5Jvw1FY=}
+    resolution: {integrity: sha512-K7i4zNfT2kgQz3GylDw40ot9GAE47sFZ9EXHFSPP6zONLgH6kWXE0KWJchkbQJLBkRazq4APwZ4OwiFFlT95OQ==}
     dependencies:
       asap: 2.0.6
       wrappy: 1.0.2
@@ -4186,7 +4186,7 @@ packages:
     dev: true
 
   /jsonfile/4.0.0:
-    resolution: {integrity: sha1-h3Gq4HmbZAdrdmQPygWPnBDjPss=}
+    resolution: {integrity: sha512-m6F1R3z8jjlf2imQHS2Qez5sjKWQzbuuhuJ/FKYFRZvPE3PuHcSMVZzfsLhGVOkfd20obL5SWEBew5ShlquNxg==}
     optionalDependencies:
       graceful-fs: 4.2.9
     dev: false
@@ -4355,8 +4355,8 @@ packages:
       yallist: 4.0.0
     dev: true
 
-  /lunox/1.5.0:
-    resolution: {integrity: sha512-15OPeHOrbfWiIsLFkAd4QJr79DySlQkYF0x/rvyasesg4Q4mYr3j/SBKHt0zfvmlIYpAX5f0FqoTXDV+jUhTcg==}
+  /lunox/1.7.0:
+    resolution: {integrity: sha512-tPdP6y6e6+aQvvI9/NhHBkyp80hya/Tjxldb+ujvajsGIxoxGdJM+xiozRF+3fQYzCxDp6rKaA1LNM8yrkImoA==}
     hasBin: true
     dependencies:
       '@kodepandai/flydrive': 2.0.1
@@ -6068,7 +6068,7 @@ packages:
     dev: true
 
   /wrappy/1.0.2:
-    resolution: {integrity: sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=}
+    resolution: {integrity: sha512-l4Sp/DRseor9wL6EvV2+TuQn63dMkPjZ/sp9XkghTEbV9KlPS1xUsZ3u7/IQO4wxtcFB4bgpQPRcR3QCvezPcQ==}
 
   /write-file-atomic/3.0.3:
     resolution: {integrity: sha512-AvHcyZ5JnSfq3ioSyjrBkH9yW4m7Ayk8/9My/DD9onKeu/94fwrMocemO2QAJFAlnnDN+ZDS+ZjAR5ua1/PV/Q==}
