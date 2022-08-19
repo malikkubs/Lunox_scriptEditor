@@ -1,4 +1,4 @@
-import HomeCard from "../components/HomeCard";
+import HomeCard from "../../components/HomeCard";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
 import "./index.css";
@@ -6,8 +6,8 @@ import jsPDF from "jspdf";
 import autoTable from "jspdf-autotable";
 
 import { Button, Input, MultiSelect, Textarea } from "@mantine/core";
-import Layout from "../components/Layout";
-const Home = ({ version = {}, data = {}, authenticated = false }) => {
+import Layout from "../../components/Layout";
+const NewProjectPage = ({ version = {}, data = {}, authenticated = false }) => {
   const [textJson, setTextJson] = useState([
     {
       id: 1,
@@ -318,4 +318,4 @@ const Home = ({ version = {}, data = {}, authenticated = false }) => {
   );
 };
 
-export default Home;
+export default NewProjectPage;
