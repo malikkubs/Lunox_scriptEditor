@@ -5,9 +5,14 @@ import "./index.css";
 import jsPDF from "jspdf";
 import autoTable from "jspdf-autotable";
 
-import { Button, Input, MultiSelect, Textarea } from "@mantine/core";
+import { Button, Input, MultiSelect, Textarea, Title } from "@mantine/core";
 import Layout from "../components/Layout";
-const Home = ({ version = {}, data = {}, authenticated = false }) => {
+const Home = ({
+  version = {},
+  data = {},
+  slug = "",
+  authenticated = false,
+}) => {
   const [textJson, setTextJson] = useState([
     {
       id: 1,
@@ -243,7 +248,7 @@ const Home = ({ version = {}, data = {}, authenticated = false }) => {
       doc.setFontSize(8);
       doc.text("Page:" + pageCurrent + " / " + PageCount, 190, 290);
     }
-    doc.save("a4.pdf");
+    doc.save(`${title}.pdf`);
   }
   //* tes pdf
   // const data={}
@@ -256,6 +261,24 @@ const Home = ({ version = {}, data = {}, authenticated = false }) => {
     { value: "next", label: "Next.js" },
     { value: "blitz", label: "Blitz.js" },
   ];
+
+  useEffect(() => {
+    const c = JSON.parse(localStorage.getItem("SaveScript") ?? "");
+    const d = c.filter((e: any, i: any) => e.slug === atob(slug));
+    setTitle(d?.[0]?.NamaFile);
+    setTextJson(d?.[0]?.data);
+  }, []);
+
+  const [title, setTitle] = useState("");
+  function saveFile() {
+    const c = JSON.parse(localStorage.getItem("SaveScript") ?? "");
+    const d = c.filter((e: any, i: any) => e.slug === atob(slug));
+    [...(d[0].NamaFile = title), ...(d[0].data = textJson)];
+
+    const b = c;
+    localStorage.setItem("SaveScript", JSON.stringify(b));
+    console.log(d, "tes");
+  }
   return (
     <>
       <Helmet title="Lunox">
@@ -263,12 +286,18 @@ const Home = ({ version = {}, data = {}, authenticated = false }) => {
       </Helmet>
       <nav className="bg-purple-300 px-4 py-3 mx-auto flex flex-row justify-between items-center">
         <MultiSelect data={datase} placeholder="Pick all that you like" />
-        <Input placeholder="Your email" />
-        <Button variant="white" classNames={{ root: "bg-white" }}>
+        <Input
+          placeholder="Name File"
+          value={title}
+          onChange={(e: any) => setTitle(e.target.value)}
+        />
+        <Button
+          onClick={() => saveFile()}
+          variant="outline"
+          color={title ? "red" : "blue"}
+          uppercase
+        >
           Save
-        </Button>
-        <Button variant="outline" color="red" uppercase>
-          Settings
         </Button>
         {/* // filled button with red color */}
         <Button onClick={() => Pdf()} variant="outline">
@@ -279,7 +308,7 @@ const Home = ({ version = {}, data = {}, authenticated = false }) => {
       <Layout version={version}>
         <div
           style={{ height: "594mm", padding: "20mm" }}
-          className="shadow-lg bg-white border border-red-500"
+          className="shadow-lg bg-white border mt-10 border-red-500"
         >
           {textJson.map?.((a, i) => (
             <Textarea

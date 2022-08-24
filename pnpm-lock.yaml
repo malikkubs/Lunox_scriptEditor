@@ -28,7 +28,7 @@ specifiers:
   jspdf: ^2.5.1
   jspdf-autotable: ^3.5.25
   knex: ^0.95.14
-  lunox: ^1.7.0
+  lunox: ^1.7.1-alpha
   mysql: ^2.18.1
   nodemon: ^2.0.16
   objection: ^3.0.1
@@ -60,7 +60,7 @@ dependencies:
   jspdf: 2.5.1
   jspdf-autotable: 3.5.25_jspdf@2.5.1
   knex: 0.95.15_mysql@2.18.1
-  lunox: 1.7.0
+  lunox: 1.7.1-alpha
   mysql: 2.18.1
   objection: 3.0.1_knex@0.95.15
   react: 18.1.0
@@ -2283,7 +2283,7 @@ packages:
     dev: true
 
   /cookie-signature/1.0.6:
-    resolution: {integrity: sha512-QADzlaHc8icV8I7vbaJXJwod9HWYp8uCqf1xa4OfNu1T7JVxQIrUgOWtHdNDtPiywmFbiS12VjotIXLrKM3orQ==}
+    resolution: {integrity: sha1-4wOogrNCzD7oylE6eZmXNNqzriw=}
     dev: false
 
   /cookie/0.4.1:
@@ -2513,7 +2513,7 @@ packages:
     dev: true
 
   /dezalgo/1.0.3:
-    resolution: {integrity: sha512-K7i4zNfT2kgQz3GylDw40ot9GAE47sFZ9EXHFSPP6zONLgH6kWXE0KWJchkbQJLBkRazq4APwZ4OwiFFlT95OQ==}
+    resolution: {integrity: sha1-f3Qt4Gb8dIvI24IFad3c5Jvw1FY=}
     dependencies:
       asap: 2.0.6
       wrappy: 1.0.2
@@ -4447,8 +4447,8 @@ packages:
       yallist: 4.0.0
     dev: true
 
-  /lunox/1.7.0:
-    resolution: {integrity: sha512-tPdP6y6e6+aQvvI9/NhHBkyp80hya/Tjxldb+ujvajsGIxoxGdJM+xiozRF+3fQYzCxDp6rKaA1LNM8yrkImoA==}
+  /lunox/1.7.1-alpha:
+    resolution: {integrity: sha512-pGR2V6+Qiq2tAvZhlwE8VSYCQ56iEODe/np6UwzWItNLb3NrZQ6/3L9R9XW5vus9m3fVSKBIgpkzWz+byqQa0A==}
     hasBin: true
     dependencies:
       '@kodepandai/flydrive': 2.0.1

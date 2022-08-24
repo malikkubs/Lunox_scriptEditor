@@ -3,9 +3,9 @@ import WelcomeController from "app/Http/Controllers/WelcomeController";
 import { Route } from "lunox";
 
 Route.get("/", [WelcomeController, "AddProject"]);
-Route.get("/tes/:slug", [WelcomeController, "home"]);
-Route.get("/harusnyaslug", [WelcomeController, "home"]);
-Route.get("/add_project", [WelcomeController, "home"]);
+Route.get("/mobil/:slug", () => "ok");
+Route.get("/demo/:slug", [WelcomeController, "home"]);
+Route.get("/add_project/:qwert", [WelcomeController, "home"]);
 Route.get("/login", [AuthController, "showLogin"]);
 Route.post("/login", [AuthController, "postLogin"]);
 Route.get("/logout", [AuthController, "logout"]);

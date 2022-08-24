@@ -41,7 +41,7 @@
     "jspdf": "^2.5.1",
     "jspdf-autotable": "^3.5.25",
     "knex": "^0.95.14",
-    "lunox": "^1.7.0",
+    "lunox": "^1.7.1-alpha",
     "mysql": "^2.18.1",
     "objection": "^3.0.1",
     "react": "^18.1.0",

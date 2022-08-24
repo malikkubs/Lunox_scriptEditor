@@ -6,6 +6,7 @@ class WelcomeController extends Controller {
     return view("home", {
       version: app("version"),
       data: req.all(),
+      slug: slug,
       authenticated: await req.auth().check(),
     });
   }
